@@ -2,6 +2,7 @@
 /ZyboZ6-Analog_Joystick.hw/
 /ZyboZ6-Analog_Joystick.sim/
 /*.ip_user_files/
+dfx_runtime.txt
 *.str
 *.jou
 *.log

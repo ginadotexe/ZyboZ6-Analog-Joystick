@@ -1,6 +1,6 @@
 # ZyboZ6-Analog-Joystick
 An attempt to make a 2-axis analog joystick work on the Zybo Z6.
-This is a class project turned open source work. Therefore, in the interest of preserving Academic Integrity, 
+This is a class project turned open source work. Permission to share this work has been granted by the course instructor for EE478. Therefore, in the interest of preserving Academic Integrity, 
 I request this code not be used for future projects in EE478 at the University at Buffalo.
 
 ## Materials 
