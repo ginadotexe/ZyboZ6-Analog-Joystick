@@ -1,9 +1,11 @@
-/*.cache/
-/*.hw/
-/*.sim/
+/ZyboZ6-Analog_Joystick.cache/
+/ZyboZ6-Analog_Joystick.hw/
+/ZyboZ6-Analog_Joystick.sim/
 /*.ip_user_files/
 *.str
 *.jou
 *.log
 *.wpc
 *.lpr
+*.backup
+*.backup.jou
