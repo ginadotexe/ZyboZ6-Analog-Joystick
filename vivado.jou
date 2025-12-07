@@ -3,10 +3,10 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Sun Dec  7 10:04:44 2025
-# Process ID         : 13972
+# Start of session at: Sun Dec  7 10:15:24 2025
+# Process ID         : 13220
 # Current directory  : E:/Github/ZyboZ6-Analog-Joystick
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26628 E:\Github\ZyboZ6-Analog-Joystick\ZyboZ6-Analog_Joystick.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent22412 E:\Github\ZyboZ6-Analog-Joystick\ZyboZ6-Analog_Joystick.xpr
 # Log file           : E:/Github/ZyboZ6-Analog-Joystick/vivado.log
 # Journal file       : E:/Github/ZyboZ6-Analog-Joystick\vivado.jou
 # Running On         : DESKTOP-KC460KK
@@ -19,7 +19,7 @@
 # Host memory        : 17100 MB
 # Swap memory        : 21474 MB
 # Total Virtual      : 38575 MB
-# Available Virtual  : 17394 MB
+# Available Virtual  : 16744 MB
 #-----------------------------------------------------------
 start_gui
 open_project E:/Github/ZyboZ6-Analog-Joystick/ZyboZ6-Analog_Joystick.xpr

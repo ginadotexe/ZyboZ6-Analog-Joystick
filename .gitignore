@@ -2,6 +2,7 @@
 /*.hw/
 /*.sim/
 /*.ip_user_files/
+*.str
 *.jou
 *.log
 *.wpc
