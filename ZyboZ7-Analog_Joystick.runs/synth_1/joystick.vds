@@ -1,0 +1,284 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Dec  9 13:35:19 2025
+# Process ID         : 47188
+# Current directory  : C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.runs/synth_1
+# Command line       : vivado.exe -log joystick.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source joystick.tcl
+# Log file           : C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.runs/synth_1/joystick.vds
+# Journal file       : C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.runs/synth_1\vivado.jou
+# Running On         : MLPD8XBC54
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-13850HX
+# CPU Frequency      : 2304 MHz
+# CPU Physical cores : 20
+# CPU Logical cores  : 28
+# Host memory        : 34029 MB
+# Swap memory        : 9126 MB
+# Total Virtual      : 43155 MB
+# Available Virtual  : 6956 MB
+#-----------------------------------------------------------
+source joystick.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.srcs/utils_1/imports/synth_1/joystick.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.srcs/utils_1/imports/synth_1/joystick.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top joystick -part xc7z010clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 35952
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1228.699 ; gain = 493.480
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'joystick' [C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.srcs/sources_1/new/joystick.vhd:41]
+INFO: [Synth 8-638] synthesizing module 'xadc_wiz_0' [c:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.vhd:80]
+	Parameter INIT_40 bound to: 16'b0000000000000000 
+	Parameter INIT_41 bound to: 16'b0010000110101111 
+	Parameter INIT_42 bound to: 16'b0000010000000000 
+	Parameter INIT_48 bound to: 16'b0000000000000000 
+	Parameter INIT_49 bound to: 16'b0000000011000000 
+	Parameter INIT_4A bound to: 16'b0000000000000000 
+	Parameter INIT_4B bound to: 16'b0000000000000000 
+	Parameter INIT_4C bound to: 16'b0000000000000000 
+	Parameter INIT_4D bound to: 16'b0000000000000000 
+	Parameter INIT_4E bound to: 16'b0000000000000000 
+	Parameter INIT_4F bound to: 16'b0000000000000000 
+	Parameter INIT_50 bound to: 16'b1011010111101101 
+	Parameter INIT_51 bound to: 16'b0101011111100100 
+	Parameter INIT_52 bound to: 16'b1010000101000111 
+	Parameter INIT_53 bound to: 16'b1100101000110011 
+	Parameter INIT_54 bound to: 16'b1010100100111010 
+	Parameter INIT_55 bound to: 16'b0101001011000110 
+	Parameter INIT_56 bound to: 16'b1001010101010101 
+	Parameter INIT_57 bound to: 16'b1010111001001110 
+	Parameter INIT_58 bound to: 16'b0101100110011001 
+	Parameter INIT_59 bound to: 16'b0101010101010101 
+	Parameter INIT_5A bound to: 16'b1001100110011001 
+	Parameter INIT_5B bound to: 16'b0110101010101010 
+	Parameter INIT_5C bound to: 16'b0101000100010001 
+	Parameter INIT_5D bound to: 16'b0101000100010001 
+	Parameter INIT_5E bound to: 16'b1001000111101011 
+	Parameter INIT_5F bound to: 16'b0110011001100110 
+	Parameter SIM_DEVICE bound to: ZYNQ - type: string 
+	Parameter SIM_MONITOR_FILE bound to: design.txt - type: string 
+INFO: [Synth 8-113] binding component instance 'U0' to cell 'XADC' [c:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.vhd:147]
+INFO: [Synth 8-256] done synthesizing module 'xadc_wiz_0' (0#1) [c:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'joystick' (0#1) [C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.srcs/sources_1/new/joystick.vhd:41]
+WARNING: [Synth 8-6014] Unused sequential element sample_y_reg was removed.  [C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.srcs/sources_1/new/joystick.vhd:84]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1337.840 ; gain = 602.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1337.840 ; gain = 602.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1337.840 ; gain = 602.621
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1337.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'xadc_inst/U0'
+Finished Parsing XDC File [c:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0.xdc] for cell 'xadc_inst/U0'
+Parsing XDC File [C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.srcs/constrs_1/new/joystick_ports.xdc]
+Finished Parsing XDC File [C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.srcs/constrs_1/new/joystick_ports.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.srcs/constrs_1/new/joystick_ports.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/joystick_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/joystick_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/joystick_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/joystick_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1365.938 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1365.938 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1365.938 ; gain = 630.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1365.938 ; gain = 630.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1365.938 ; gain = 630.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'xadc_addr_reg' in module 'joystick'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+*
+                  iSTATE |                          0010000 |                          0010000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3898] No Re-encoding of one hot register 'xadc_addr_reg' in module 'joystick'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 1365.938 ; gain = 630.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	   3 Input    7 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 2     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1383.320 ; gain = 648.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1545.129 ; gain = 809.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1545.129 ; gain = 809.910
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 1554.680 ; gain = 819.461
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1788.695 ; gain = 1053.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1788.695 ; gain = 1053.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1788.695 ; gain = 1053.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1788.695 ; gain = 1053.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1788.695 ; gain = 1053.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1788.695 ; gain = 1053.477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     2|
+|4     |LUT3 |     3|
+|5     |LUT6 |     1|
+|6     |XADC |     1|
+|7     |FDRE |     4|
+|8     |IBUF |     6|
+|9     |OBUF |     4|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1788.695 ; gain = 1053.477
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:18 . Memory (MB): peak = 1788.695 ; gain = 1025.379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 1788.695 ; gain = 1053.477
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1788.695 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1801.496 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: ffc5dba8
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:37 . Memory (MB): peak = 1801.496 ; gain = 1277.113
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1801.496 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/jstoddar/Documents/ZyboZ7-Analog-Joystick/ZyboZ7-Analog_Joystick.runs/synth_1/joystick.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file joystick_utilization_synth.rpt -pb joystick_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 13:36:05 2025...
